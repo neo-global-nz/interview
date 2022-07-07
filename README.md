@@ -2,7 +2,7 @@
 
 This is an area to show your familiarity with node.js and JavaScript frameworks.
 
-The project has been setup to start a server with Fastify to server a large file of JSON which includes 3 sets of different bank accounts and transaction data.
+The project has been setup to start a server with Fastify to serve a large file of JSON which includes 3 sets of different bank accounts and transaction data.
 
 ## Setup
 
