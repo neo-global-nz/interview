@@ -28,6 +28,7 @@ Build a simple one page web app using React to talk to this endpoint and surface
 
 - Could you add any new libraries?
 - Can the data be seperated to reduce bandwidth?
+- Could you do more than just show the data?
 
 ## Submit
 
