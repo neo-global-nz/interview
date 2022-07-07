@@ -32,4 +32,4 @@ Build a simple one page web app using React to talk to this endpoint and surface
 
 ## Submit
 
-- Fork this repo and work wihthin there and submit the repo URL to your contact at Neo
+- Fork this repo and work there and submit the public repo URL to your contact at Neo
