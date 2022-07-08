@@ -15,7 +15,7 @@ server.get("/api/transactions", async (request, reply) => {
 
 const start = async () => {
   try {
-    await server.listen({ port: 3000 });
+    await server.listen({ port: 5000 });
 
     const address = server.server.address();
     console.log("Server has been started:", address);
