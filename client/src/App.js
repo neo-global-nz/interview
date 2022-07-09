@@ -1,11 +1,12 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import AccountData from "./components/AccountData";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [accountData, setAccountData] = useState([]);
-  const [decisionData, setDecisionData] = useState([]);
+  const [accountData, setAccountData] = useState({});
+  const [decisionData, setDecisionData] = useState({});
 
   useEffect(() => {
     // I used AbortController (https://developer.mozilla.org/en-US/docs/Web/API/AbortController)
@@ -46,7 +47,7 @@ function App() {
 
     fetchData();
 
-    return () => abortController.abort();
+    // return () => abortController.abort();
   }, []);
 
   if (loading) {
@@ -68,11 +69,12 @@ function App() {
       </main>
     );
   }
+  console.log(accountData[2].accountType);
   return (
     <main className="App">
       <header className="App-header">
         <h1>Bank Summary</h1>
-        {/* <p>{decisionData[0].type}</p> */}
+        <AccountData accountData={accountData} />
       </header>
     </main>
   );
