@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import AccountData from "./components/AccountData";
+import DecisionData from "./components/DecisionData";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -69,12 +70,12 @@ function App() {
       </main>
     );
   }
-  console.log(accountData[2].accountType);
   return (
     <main className="App">
       <header className="App-header">
         <h1>Bank Summary</h1>
         <AccountData accountData={accountData} />
+        <DecisionData decisionData={decisionData} />
       </header>
     </main>
   );
