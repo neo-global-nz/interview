@@ -1,26 +1,31 @@
+import "./table.css";
 const AccountData = ({ accountData }) => {
-  console.log("props", accountData);
   return !accountData ? (
-    <h2>No Account Data</h2>
+    <h3>No Account Data</h3>
   ) : (
     <>
-      <div className="tableclass">
-        <h3>Accounts Summary</h3>
-        <thead>
-          <tr>
+      <h3>Accounts Summary</h3>
+      <table className="table">
+        <tbody>
+          <tr className="tablehead">
             <td>Account Name</td>
             <td>Account Type</td>
-            <td>Available Balance</td>
-            <td>Current Balance</td>
+            <td>Available </td>
+            <td>Current </td>
           </tr>
-        </thead>
-        <tbody>
+
           {accountData.map(
             (
-              { accountName, accountType, availableBalance, currentBalance },
+              {
+                id,
+                accountName,
+                accountType,
+                availableBalance,
+                currentBalance,
+              },
               index
             ) => (
-              <tr key={index}>
+              <tr key={id} className="tablerow">
                 <td>{accountName}</td>
                 <td>{accountType}</td>
                 <td>${availableBalance}</td>
@@ -29,7 +34,7 @@ const AccountData = ({ accountData }) => {
             )
           )}
         </tbody>
-      </div>
+      </table>
     </>
   );
 };
