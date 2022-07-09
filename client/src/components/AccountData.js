@@ -18,7 +18,7 @@ const AccountData = ({ accountData }) => {
             { id, accountName, accountType, availableBalance, currentBalance },
             index
           ) => (
-            <tr key={index}>
+            <tr key={id}>
               <td>{accountName}</td>
               <td>{accountType}</td>
               <td>${availableBalance}</td>
