@@ -1,8 +1,5 @@
 import "./table.css";
 const DecisionData = ({ decisionData }) => {
-  console.log(decisionData);
-
-  console.log(decisionData);
   return !decisionData ? (
     <h3>No Decision Data</h3>
   ) : (

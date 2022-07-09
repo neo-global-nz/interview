@@ -33,7 +33,6 @@ function App() {
           } = data;
           setAccountData(bankAccounts);
           setDecisionData(decisionMetrics);
-          console.log(bankAccounts, decisionMetrics);
         }
       } catch (error) {
         if (!abortController.signal.aborted) {
