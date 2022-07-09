@@ -72,7 +72,7 @@ function App() {
     <main className="App">
       <header className="App-header">
         <h1>Bank Summary</h1>
-        <p>{decisionData[0].type}</p>
+        {/* <p>{decisionData[0].type}</p> */}
       </header>
     </main>
   );
