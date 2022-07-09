@@ -1,5 +1,4 @@
 const AccountData = ({ accountData }) => {
-  console.log("props", accountData);
   return !accountData ? (
     <h2>No Account Data</h2>
   ) : (
