@@ -28,8 +28,8 @@ const AccountData = ({ accountData }) => {
               <tr key={id} className="tablerow">
                 <td>{accountName}</td>
                 <td>{accountType}</td>
-                <td>${availableBalance}</td>
-                <td>${currentBalance}</td>
+                <td>$ {availableBalance}</td>
+                <td>$ {currentBalance}</td>
               </tr>
             )
           )}
